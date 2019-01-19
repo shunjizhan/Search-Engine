@@ -7,7 +7,8 @@
 
 # TASK 2A:
 # Create and index the documents using the default standard analyzer
-
+javac GetWebpage.java
+java GetWebpage http://stackoverflow.com
 
 
 
