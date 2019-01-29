@@ -1,14 +1,25 @@
 #!/bin/bash
 
-# Uncomment the following two commands to compile and execute your modified ParseJSON code in this script.
+# javac GetWebpage.java
+# java GetWebpage http://stackoverflow.com
 
-# javac ParseJSON.java
-# java ParseJSON
+
 
 # TASK 2A:
-# Create and index the documents using the default standard analyzer
-javac GetWebpage.java
-java GetWebpage http://stackoverflow.com
+echo '---------- TASK 2A ----------'
+echo 'Preprocessing data...'
+javac ParseJSON.java
+java ParseJSON
+
+echo 'Generating indexes...'
+curl -H "Content-Type: application/json" -XPOST 'localhost:9200/task2a/wikipage/_bulk?pretty' --data-binary "@data/out.txt"
+
+echo 'Tests...'
+curl -s -XGET "localhost:9200/task2a/wikipage/1?pretty"
+# curl -s -XGET "localhost:9200/task2a/wikipage/34261?pretty"
+# curl -s -XGET "localhost:9200/task2a/wikipage/67380?pretty"
+# curl -s -XGET "localhost:9200/task2a/wikipage/91872?pretty"
+# curl -s -XGET "localhost:9200/task2a/wikipage/128604?pretty"
 
 
 
