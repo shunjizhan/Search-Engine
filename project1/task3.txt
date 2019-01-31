@@ -1,0 +1,89 @@
+{ 
+"query": "bitcoin", 
+"description": "all pages related to bitcoin cryptocurrency", 
+"pages": [
+    "https://en.wikipedia.org/wiki/Bitcoin",
+    "https://en.wikipedia.org/wiki/Bitcoin_network"
+]}
+
+{ 
+"query": "smart contract", 
+"description": "all pages related to smart contract", 
+"pages": [
+    "https://en.wikipedia.org/wiki/Smart_contract",
+    "https://en.wikipedia.org/wiki/Blockchain"
+]}
+
+{ 
+"query": "james", 
+"description": "all pages related to lebron james, the NBA player", 
+"pages": [
+    "https://en.wikipedia.org/wiki/LeBron_James",
+    "https://en.wikipedia.org/wiki/National_Basketball_Association"
+]}
+
+{ 
+"query": "kobe", 
+"description": "all pages related to the NBA kobe", 
+"pages": [
+    "https://en.wikipedia.org/wiki/Kobe_Bryant",
+    "https://en.wikipedia.org/wiki/National_Basketball_Association"
+]}
+
+
+{ 
+"query": "kobe beef", 
+"description": "all pages related to kobe beef, not the nba player", 
+"pages": [
+    "https://en.wikipedia.org/wiki/Kobe_beef",
+    "https://en.wikipedia.org/wiki/Wagyu"
+]}
+
+
+{ 
+"query": "blockchain", 
+"description": "all pages related to blockchain and cryptocurrency", 
+"pages": [
+    "https://en.wikipedia.org/wiki/Blockchain",
+    "https://en.wikipedia.org/wiki/Cryptocurrency"
+]}
+
+
+{ 
+"query": "EOSIO", 
+"description": "all pages related to EOS, the blockchain protocal", 
+"pages": [
+    "https://en.wikipedia.org/wiki/EOS.IO",
+    "https://en.wikipedia.org/wiki/Blockchain",
+    "https://en.wikipedia.org/wiki/Cryptocurrency"   
+]}
+
+
+{ 
+"query": "", 
+"description": "all pages related to stock and the market", 
+"pages": [
+    "https://en.wikipedia.org/wiki/Stock",
+    "https://en.wikipedia.org/wiki/Stock_market"
+]}
+
+
+{ 
+"query": "computer", 
+"description": "all pages related to general topics about computer", 
+"pages": [
+    "https://en.wikipedia.org/wiki/Computer",
+    "https://en.wikipedia.org/wiki/Computer_program",
+    "https://en.wikipedia.org/wiki/Computer_science",
+]}
+
+{ 
+"query": "decentralization", 
+"description": "all pages related to decentralization concepts and applications", 
+"pages": [
+    "https://en.wikipedia.org/wiki/Decentralization",
+    "https://en.wikipedia.org/wiki/Decentralized_autonomous_organization",
+    "https://en.wikipedia.org/wiki/Blockchain",
+    "https://en.wikipedia.org/wiki/Cryptocurrency" 
+]}
+

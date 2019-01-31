@@ -1,5 +1,5 @@
-data/out.txt
-
+project1/data/
+.DS_Store
 
 # Compiled class file
 *.class
