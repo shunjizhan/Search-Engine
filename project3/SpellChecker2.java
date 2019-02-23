@@ -3,13 +3,13 @@ import java.util.*;
 import java.text.NumberFormat;
 import java.text.DecimalFormat;
 
-public class SpellChecker {
+public class SpellChecker2 {
     Map < String, Integer > dict;   // dict contains all dictionary words and their frequency in corpus
     static final String alphabet = "abcdefghijklmnopqrstuvwxyz";
 
     // constructors
-    public SpellChecker() {}
-    public SpellChecker(String dictionaryFile) throws IOException {
+    public SpellChecker2() {}
+    public SpellChecker2(String dictionaryFile) throws IOException {
         dict = readDictionary(dictionaryFile);
     }
 
@@ -257,7 +257,7 @@ public class SpellChecker {
                    IT WILL BREAK OUR GRADING SCRIPT
      */
     public static void main(String args[]) throws IOException {
-        SpellChecker sc = new SpellChecker(args[0]);
+        SpellChecker2 sc = new SpellChecker2(args[0]);
         Map < String, String > testset = sc.readTestset(args[1]);
         boolean printAll = (args.length < 3) ? true : Boolean.parseBoolean(args[2]);
         sc.runTestcases(testset, printAll);
