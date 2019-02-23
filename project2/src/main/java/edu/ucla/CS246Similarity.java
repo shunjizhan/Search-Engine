@@ -98,12 +98,12 @@ public class CS246Similarity extends Similarity {
   
   protected float idf(BasicStats stats)
   {
-    return 1f;
+    return (float)log2((float)(stats.numberOfDocuments + 1) / (float)(stats.docFreq + 1));
   }
 
   protected float docValueBoost(long docValue)
   {
-    return 1f;
+    return (float)log2((float)(docValue + 1));
   }
 
   /**

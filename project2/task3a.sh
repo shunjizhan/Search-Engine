@@ -2,23 +2,28 @@
 
 QUERY=$1
 
-curl -s -XGET 'localhost:9200/task1a/_search?pretty' -H 'Content-Type: application/json' -d'
+curl -XGET 'localhost:9200/task1a/_search?pretty' -H 'Content-Type: application/json' -d'
 {
-  "query": {
-    "bool": {
-      "should": [
-        { 
-            "match": { 
-                "title": "'$QUERY'"
-            }
-        },
-        {
-            "match": { 
-                "abstract": "'$QUERY'"
-            }
+    "query": {
+        "bool": {
+            "must": [{
+                "match": {
+                    "title": {
+                        "query": "'$QUERY'",
+                        "boost": 10
+                    }
+                }
+            }, {
+                "match": {
+                    "abstract": {
+                        "query": "'$QUERY'"
+                    }
+                }
+            }],
+            "must_not": [
+                { "match": { "sections": "'$QUERY'" } }
+            ]
         }
-      ]
     }
-  }
 }
 '
