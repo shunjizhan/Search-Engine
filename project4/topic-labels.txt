@@ -1,0 +1,19 @@
+0: data and information research
+1: climate research
+2: american humanity
+3: university research
+4: organic studies
+5: industrial project study
+6: model of research result
+7: student science and engineering program
+8: wave model
+9: embedded system
+10: economic policy and it's effect
+11: computational algorithms
+12: chemical and environment
+13: material science
+14: laser reserach
+16: environmental study
+17: evolution study
+18: antarctic study
+19: geometry theories

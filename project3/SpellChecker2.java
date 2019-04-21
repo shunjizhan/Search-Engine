@@ -29,7 +29,7 @@ public class SpellChecker2 {
      */
     public double calculateEM(String word, String correction, double editDistance) {
         // For Task 1, we simply return 1 as the error model P(correction|word) 
-        return 1.0;
+        return 1.0 / editDistance;
     }
 
     /*
@@ -50,18 +50,18 @@ public class SpellChecker2 {
             // "deletion at [i]": drop the character at the current position i
             if (R.length() > 0) {
                 temp = L + R.substring(1);
-                cands.put(temp, 1.0); // 1.0 indicates the edit distance 1
+                cands.put(temp, 6.897273);
             }
             // "insertion at [i]" insert an alphabet (a-z) at the current position i
             for (int j = 0; j < alphabet.length(); ++j) {
                 temp = L + alphabet.charAt(j) + R;
-                cands.put(temp, 1.0); // 1.0 indicates the edit distance 1
+                cands.put(temp, 1.035207);
             }
 
             // implement transposition operator here
             if (L.length() > 0 && R.length() > 0) {
                 temp = L.substring(0, i - 1) + R.charAt(0) + L.charAt(i - 1) + R.substring(1);
-                cands.put(temp, 1.0); // 1.0 indicates the edit distance 1
+                cands.put(temp, 6.479170);
             }
 
             // implement substitution operator here
@@ -73,7 +73,7 @@ public class SpellChecker2 {
                 } else {
                     temp = L.substring(0, i) + alphabet.charAt(k) + R.substring(1);
                 }
-                cands.put(temp, 1.0); // 1.0 indicates the edit distance 1
+                cands.put(temp, 9.378839);
             }           
         }
         return cands;
